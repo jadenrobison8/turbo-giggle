@@ -15,14 +15,6 @@ router.get('/', (req,res) => {
       ],
       include: [
          {
-            model: Comment,
-            attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
-            include: {
-               model: User,
-               attributes: 'username'
-            }
-         },
-         {
             model: User,
             attributes: ['username']
          }
@@ -68,11 +60,11 @@ router.get('/:id', (req,res) => {
 });
 
 //POST /api/posts/
-router.post('/', withAuth, (req,res) => {
+router.post('/', (req,res) => {
    Post.create({
       title: req.body.title,
       post_contents: req.body.post_contents,
-      user_id: req.session.user_id
+      user_id: req.body.user_id
    })
       .then(dbPostData => res.json(dbPostData))
       .catch(err => {

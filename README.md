@@ -21,7 +21,7 @@ Start by opening mysql and choosing the db. Then start the server with "npm star
 
 ## Media
 [![Deployed](https://desolate-sands-24731.herokuapp.com/)]
-
+![scrn1](./tech_blog.png)
 
 ## Questions
 Github: github.com/jadenrobison8  

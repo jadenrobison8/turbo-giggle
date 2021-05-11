@@ -5,7 +5,7 @@ const bcrypt = require('bcrypt');
 //create user model
 class User extends Model { 
    checkPassword(loginPw) {
-      return bcrypt.conpareSync(loginPw, this.password);
+      return bcrypt.compareSync(loginPw, this.password);
    }
 }
 

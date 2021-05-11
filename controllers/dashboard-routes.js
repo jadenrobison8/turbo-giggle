@@ -108,7 +108,7 @@ router.get('/create/', withAuth, (req,res) => {
    })
       .then(dbPostData => {
          const posts = dbPostData.map(post => post.get({ plain: true }));
-         res.render('add-post', {posts, loggedIn: true});
+         res.render('create-post', {posts, loggedIn: true});
       })
       .catch(err => {
          console.log(err);

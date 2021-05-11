@@ -50,6 +50,14 @@ router.get('/login', (req,res) => {
 });
 
 //get signup
+router.get('/signup', (req,res) => {
+   if (req.session.loggedIn) {
+      res.redirect('/');
+      return;
+   }
+
+   res.render('signup');
+});
 
 router.get('/post/:id', (req,res) => {
    Post.findOne({

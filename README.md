@@ -20,6 +20,7 @@ Clone repository and download dependencies
 Start by opening mysql and choosing the db. Then start the server with "npm start"
 
 ## Media
+[![Deployed](https://desolate-sands-24731.herokuapp.com/)]
 
 
 ## Questions

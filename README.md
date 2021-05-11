@@ -14,12 +14,13 @@ A blog where you can post about anything tech related
 * [License](#license)
 
 ## Installation
-clone repository and download dependencies
+Clone repository and download dependencies
 
 ## Usage
 Start by opening mysql and choosing the db. Then start the server with "npm start"
 
 ## Media
+
 
 ## Questions
 Github: github.com/jadenrobison8  
